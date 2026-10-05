@@ -8,8 +8,8 @@ This project was created as part of a Frontend Developer assessment. The goal wa
 
 ## 🚀 Live Demo
 
-- **Live URL:** Add your Vercel URL here
-- **GitHub Repository:** Add your GitHub repository URL here
+- **Live URL:** https://tis-homepage-redesign-eight-virid.vercel.app
+- **GitHub Repository:** https://github.com/Lekhithasree/tis-homepage-redesign
 
 ---
 
