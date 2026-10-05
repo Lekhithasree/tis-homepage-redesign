@@ -30,8 +30,10 @@ button {
   position: sticky;
   top: 0;
   width: 100%;
-  background: #ffffff;
-  border-bottom: 1px solid #eeeeee;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
   z-index: 1000;
 }
 
@@ -53,17 +55,28 @@ button {
 }
 
 .logo-main {
-  font-size: 28px;
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #173f35;
+  color: #e8c878;
+
+  font-size: 21px;
   font-weight: 800;
-  color: #173f35;
+
+  border-radius: 50%;
 }
 
 .logo-sub {
+  max-width: 145px;
   font-size: 13px;
-  font-weight: 600;
-  color: #333333;
-  max-width: 120px;
-  line-height: 1.2;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #173f35;
 }
 
 .desktop-nav {
@@ -185,12 +198,13 @@ button {
 .hero-overlay {
   position: absolute;
   inset: 0;
+
   background:
     linear-gradient(
       90deg,
-      rgba(11, 37, 31, 0.88) 0%,
-      rgba(11, 37, 31, 0.65) 48%,
-      rgba(11, 37, 31, 0.2) 100%
+      rgba(8, 34, 28, 0.92) 0%,
+      rgba(8, 34, 28, 0.72) 45%,
+      rgba(8, 34, 28, 0.25) 100%
     );
 }
 
@@ -221,15 +235,16 @@ button {
 
 .hero h1 span {
   display: block;
+  margin-top: 8px;
   color: #e8c878;
 }
 
 .hero-description {
   max-width: 600px;
-  margin-top: 24px;
+  margin-top: 28px;
   font-size: 18px;
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.88);
 }
 
 .hero-actions {
@@ -242,7 +257,7 @@ button {
 .hero-secondary-button {
   min-height: 50px;
   padding: 0 24px;
-  border-radius: 6px;
+  border-radius: 999px;
 
   display: inline-flex;
   align-items: center;
