@@ -1,9 +1,27 @@
+import Navbar from './components/Navbar'
+import Hero from './sections/Hero'
+import About from './sections/About'
+import Stats from './sections/Stats'
+import Experience from './sections/Experience'
+import Campus from './sections/Campus'
+import Testimonials from './sections/Testimonials'
+import Admissions from './sections/Admissions'
+
 function App() {
   return (
-    <main>
-      <h1>Tulas International School</h1>
-      <p>Homepage Redesign</p>
-    </main>
+    <>
+      <Navbar />
+
+      <main>
+        <Hero />
+        <About/>
+        <Stats/>
+        <Experience/>
+        <Campus/>
+        <Testimonials/>
+        <Admissions/>
+      </main>
+    </>
   )
 }
 
